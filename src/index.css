@@ -1,0 +1,276 @@
+:root {
+  --arkaplan: #f7f7f9;
+  --yuzey: #ffffff;
+  --metin: #222222;
+  --soluk: #888888;
+  --vurgu: #2563eb;
+  --etiket-bg: #e0e7ff;
+  --etiket-metin: #3730a3;
+  --golge: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] {
+  --arkaplan: #0f172a;
+  --yuzey: #1e293b;
+  --metin: #e2e8f0;
+  --soluk: #94a3b8;
+  --vurgu: #60a5fa;
+  --etiket-bg: #312e81;
+  --etiket-metin: #c7d2fe;
+  --golge: rgba(0, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--metin);
+  background: var(--arkaplan);
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--yuzey);
+  box-shadow: 0 2px 4px var(--golge);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: var(--metin);
+}
+nav a:hover {
+  color: var(--vurgu);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.tema-buton {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+.hero {
+  text-align: center;
+  padding-top: 6rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.filtreler {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.filtre-buton {
+  border: 1px solid var(--etiket-bg);
+  background: var(--yuzey);
+  color: var(--etiket-metin);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.filtre-buton:hover {
+  background: var(--etiket-bg);
+}
+.filtre-buton.aktif {
+  background: var(--etiket-metin);
+  color: var(--yuzey);
+}
+
+.kartlar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.kart {
+  background: var(--yuzey);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--golge);
+  transition: transform 0.2s;
+}
+.kart:hover {
+  transform: translateY(-4px);
+}
+.kart h3 {
+  margin-bottom: 0.5rem;
+}
+
+.etiketler {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.etiket {
+  background: var(--etiket-bg);
+  color: var(--etiket-metin);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--soluk);
+}
+.hakkimda {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.yetenekler {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.yetenekler li {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #888;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+.hakkimda h3 {
+  margin-top: 2rem;
+}
+.iletisim {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.iletisim-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.iletisim-form input,
+.iletisim-form textarea {
+  padding: 0.7rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.iletisim-form button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.hata {
+  color: #f87171;
+}
+.basari {
+  color: #4ade80;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+.kartlar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hakkimda,
+  .iletisim {
+    padding: 2rem 1rem;
+  }
+}
