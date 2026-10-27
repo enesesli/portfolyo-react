@@ -1,26 +1,32 @@
 export const projeler = [
   {
-    baslik: "SAP Kod Analiz Aracı",
+    baslik: "Otonom Drone Tespit ve Etkisiz Hale Getirme Simülasyonu",
     aciklama:
-      "T-code üzerinden Z programlarını analiz edip BAdI, BAPI ve fonksiyonları raporlayan ABAP aracı.",
-    teknolojiler: ["ABAP", "SAP"],
+      "Bitirme projesi. Unreal Engine ve Microsoft AirSim ile otonom drone simülasyonu; hedef takibi yapan kule, balistik hesaplamayla atış sistemi ve Python ile Unreal arasında UDP üzerinden gerçek zamanlı haberleşme.",
+    teknolojiler: ["Unreal Engine", "C++", "Python"],
   },
   {
-    baslik: "Satış Sipariş Cockpit'i",
+    baslik: "Satış Siparişi Kontrol Ekranı (Cockpit)",
     aciklama:
-      "Bölünmüş ekran ALV ile satış siparişlerini tek yerden yöneten SD raporu.",
-    teknolojiler: ["ABAP", "ALV", "SD"],
+      "Çift panelli (ağaç + liste) etkileşimli sipariş takip ekranı. Excel'den veri aktarımı, arka plan işleri ve sipariş başlık/kalem seviyesinde güncelleme özellikleri.",
+    teknolojiler: ["SAP ABAP"],
   },
   {
-    baslik: "Genel Tablo Editörü",
+    baslik: "PDF Form Üretimi ve Otomatik E-posta",
     aciklama:
-      "Dinamik anahtar alanları ve değişiklik logu olan tablo düzenleme programı.",
-    teknolojiler: ["ABAP", "Dinamik Programlama"],
+      "SAP içinde Adobe Forms ile PDF belge üretimi ve oluşan belgenin ilgili kişilere otomatik e-posta ile gönderilmesi.",
+    teknolojiler: ["SAP ABAP"],
   },
   {
-    baslik: "React + SAP REST Entegrasyonu",
+    baslik: "Dinamik Tablo Editörü",
     aciklama:
-      "SAP verisini özel bir REST servisiyle React arayüzüne taşıyan deneme projesi.",
-    teknolojiler: ["React", "REST", "ABAP"],
+      "Farklı tabloların anahtar alanlarını dinamik olarak tanıyıp düzenlemeye izin veren genel amaçlı editör. Yapılan her değişikliği kayıt altına alan loglama mekanizması içeriyor.",
+    teknolojiler: ["SAP ABAP"],
+  },
+  {
+    baslik: "Kişisel Portfolyo Sitesi",
+    aciklama:
+      "Şu an baktığın site. Teknolojiye göre proje filtreleme, iletişim formu ve mobil uyumlu tasarım. GitHub ile Vercel üzerinden otomatik yayınlanıyor.",
+    teknolojiler: ["React", "JavaScript", "CSS"],
   },
 ];
