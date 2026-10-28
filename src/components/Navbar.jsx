@@ -1,5 +1,6 @@
 const linkler = [
   { id: "hakkimda", ad: "Hakkımda" },
+  { id: "deneyim", ad: "Deneyim" },
   { id: "projeler", ad: "Projeler" },
   { id: "iletisim", ad: "İletişim" },
 ];

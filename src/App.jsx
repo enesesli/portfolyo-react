@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Projeler from "./components/Projeler";
 import Hakkimda from "./components/Hakkimda";
 import Iletisim from "./components/Iletisim";
+import Deneyim from "./components/Deneyim";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </section>
 
         <Hakkimda />
+        <Deneyim />
         <Projeler />
         <Iletisim />
         <section id="iletisim">

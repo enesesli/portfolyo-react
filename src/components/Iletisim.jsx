@@ -28,6 +28,19 @@ function Iletisim() {
     <section id="iletisim" className="iletisim">
       <h2>İletişim</h2>
 
+      <div className="iletisim-linkler">
+        <a href="mailto:enessesli23@gmail.com">E-posta</a>
+        <a href="https://github.com/enesesli" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+        <a
+          href="www.linkedin.com/in/enes-sesli-94145b255"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
       {gonderildi ? (
         <p className="basari">
           Mesajın için teşekkürler! En kısa sürede dönüş yapacağım.

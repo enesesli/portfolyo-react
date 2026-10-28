@@ -274,3 +274,63 @@ section {
     padding: 2rem 1rem;
   }
 }
+.deneyim {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.zaman-cizelgesi {
+  border-left: 2px solid #555;
+  padding-left: 1.5rem;
+}
+
+.deneyim-oge {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.deneyim-oge::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.5rem - 6px);
+  top: 0.3rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #60a5fa;
+}
+
+.deneyim-oge h3 {
+  margin: 0.2rem 0;
+}
+
+.deneyim-tarih {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.deneyim-kurum {
+  margin: 0 0 0.5rem;
+  opacity: 0.85;
+}
+
+.deneyim-oge ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.iletisim-linkler {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.iletisim-linkler a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.iletisim-linkler a:hover {
+  text-decoration: underline;
+}
